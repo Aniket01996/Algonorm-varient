@@ -526,7 +526,7 @@ input {
 }
 
 /* Mobile Responsiveness */
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 650px) {
     .logo {
         width: 100px;
         height: 14px;
