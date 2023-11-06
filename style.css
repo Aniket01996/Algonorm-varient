@@ -1,0 +1,702 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poiret One', sans-serif;
+    /* border: 1px solid #979797; */
+}
+
+html,
+body {
+    width: 100% !important;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+.logo {
+    width: 180px;
+    height: 26px;
+    padding: 0 10px;
+}
+
+.navbar {
+    background-color: black;
+    height: 22rem;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgba(252, 252, 15, 0.895);
+}
+
+.nav-bars {
+    display: none;
+}
+
+.nav-right>ul {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.nav-right>ul>li {
+    margin: 0 30px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.hero {
+    display: flex;
+}
+
+.tech-img {
+    margin: 0 6.5rem;
+    width: 32rem;
+    height: 30rem;
+}
+
+.description {
+    font-size: 18px;
+    margin: 50px 100px;
+    text-align: center;
+}
+
+/* section 02 */
+.section2-main {
+    height: 30rem;
+    background-color: rgba(252, 252, 15, 0.895);
+}
+
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-2-right {
+    margin: 20px;
+    padding: 20px;
+}
+
+.para {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.section-2-left {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+}
+
+button {
+    color: white;
+    background-color: black;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.contactBtn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.contactBtn:hover .fa-arrow-right-to-bracket {
+    color: black !important;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    width: 4rem;
+    height: 4rem;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.dashed-line {
+    display: flex;
+    justify-content: center;
+}
+
+.hr-dotted {
+    width: 94%;
+    list-style: circle;
+    border: 1px dashed black;
+    border-width: 1.5px;
+}
+
+.date-2023 {
+    margin: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.date {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+/* Services */
+.services-icon {
+    display: flex;
+    align-items: center;
+}
+
+.circle2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.fa-solid .fa-users-gear {
+    width: 30px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    padding: 20px;
+}
+
+.services-head {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Application section */
+.section-3 {
+    background-color: black;
+    /* height: 46rem; */
+}
+
+.app-para {
+    color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+h5 {
+    color: gray;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.app-container {
+    position: absolute;
+    margin: 20px;
+    padding: 20px;
+    width: 20rem;
+    text-align: center;
+}
+
+.app-tabs {
+    color: white;
+    display: flex;
+    height: 32rem;
+}
+
+h3 {
+    padding: 18px 0;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+h3:hover {
+    color: rgba(252, 252, 15, 0.895);
+    font-size: 1.4rem;
+}
+
+.tech-circle {
+    margin: 20px;
+    margin-left: 34rem;
+    height: 450px;
+    width: 450px;
+}
+
+.rotate-circle {
+    animation: rotate 1.4s ease-in-out 1;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+.application-para {
+    text-shadow: 5px 5px 5px black;
+    /* font-size: 22px; */
+    width: 60%;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 400px;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 30%;
+    font-weight: bold;
+}
+
+/* .healthcare {
+    display: none;
+} */
+.logistics {
+    display: none;
+}
+
+.real-estate {
+    display: none;
+}
+
+.education {
+    display: none;
+}
+
+.agriculture {
+    display: none;
+}
+
+.social-media {
+    display: none;
+}
+
+.ecommerce {
+    display: none;
+}
+
+.hr-white {
+    width: 94%;
+    border: 1px dashed white;
+    border-width: 1.5px;
+}
+
+.about-main {
+    width: 100%;
+    height: 100vh !important;
+    position: relative;
+}
+
+.app-container>*:not(:last-child) {
+    border-bottom: 2px dashed #FFFFFF;
+}
+
+/* About */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about-right {
+    width: 42%;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.about-para,
+.discover-para {
+    color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+.discover-para {
+    align-self: flex-end;
+}
+
+/* Benefits section */
+
+.benefits {
+    padding: 20px;
+    margin: 20px;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    align-items: center;
+}
+
+.card {
+    width: 18rem;
+    height: 24rem;
+    background-color: black;
+    border-radius: 20px;
+    margin: 30px 10px;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    /* box-shadow: 5px 5px 5px black; */
+}
+
+.first {
+    background-color: rgba(252, 252, 15, 0.895);
+}
+
+.second {
+    color: white;
+}
+
+.img-2 {
+    text-align: center;
+    width: 14rem;
+    height: 12rem;
+    border-radius: 20px;
+    margin: 16px;
+}
+
+.ai-contri {
+    font-size: 1.2rem;
+}
+
+.third {
+    background-color: rgba(252, 252, 15, 0.895);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.nested {
+    background-color: #ffffff;
+    border: 2px solid black;
+    font-weight: bolder;
+    padding: 10px;
+    text-align: left;
+}
+
+.one {
+    margin-bottom: 20px;
+}
+
+/* AI Tech / Contact section */
+
+.ai-tech {
+    background-color: black;
+    color: white;
+}
+
+.tech-para {
+    color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+.tech-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.brain-img {
+    padding: 20px;
+    margin: 20px;
+}
+
+.unlock-para {
+    text-align: right;
+    padding: 20px;
+    margin: 20px;
+}
+
+.contact-head {
+    text-align: center;
+    font-size: 10rem;
+}
+
+form {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+input {
+    margin: 10px;
+    width: 30%;
+    height: 40px;
+    color: #ffffff;
+    background-color: black;
+    border: 2px dashed white;
+    padding: 10px;
+}
+
+#project {
+    height: 100px;
+}
+
+.submit-btn {
+    width: 80px;
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
+.footer-section {
+    background-color: #ffffff;
+    height: 1rem;
+}
+
+.footer {
+    border-top: 2px dashed white;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.logo1 {
+    width: 180px;
+}
+
+/* particles */
+#particles-js {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 400px) {
+    .logo {
+        width: 100px;
+        height: 14px;
+        padding: 0 10px;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-bars {
+        display: block;
+        margin: 0 10px;
+        padding: 4px;
+        border: 1px solid white;
+        border-radius: 6px;
+    }
+
+    .navbar {
+        height: 32rem;
+    }
+
+
+    .tech-img {
+        margin: 0 auto;
+        width: 16rem;
+        height: 16rem;
+        text-align: center;
+    }
+
+    .btn {
+        width: 190px;
+    }
+
+    .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 -10px;
+        width: 4rem;
+        height: 4rem;
+        background-color: black;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .description {
+        font-size: 1rem;
+        margin: 40px 0px;
+    }
+
+    .section2-main {
+        height: 26%;
+    }
+
+    .services-para {
+        font-size: 18px !important;
+        margin-top: 20px;
+    }
+
+    .section-2 {
+        flex-direction: column;
+    }
+
+    .para {
+        font-size: 2rem;
+    }
+
+    h5 {
+        padding: 10px 20px;
+    }
+
+    .section-2-left {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .services {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .app-tabs {
+        flex-direction: column;
+    }
+
+    .app-container {
+        text-align: center;
+        margin-left: 10%;
+        font-size: 14px;
+    }
+
+    .tech-circle {
+        padding: 10px;
+        margin: 0 50px;
+        width: 74%;
+        height: 28%;
+        margin-top: 480px;
+    }
+
+    .hr-inactive {
+        display: none;
+
+    }
+
+    .application-para {
+        margin: 100px 12px;
+        text-shadow: 5px 5px 5px black;
+        font-size: 12px;
+        color: white;
+        text-align: center;
+        width: 90%;
+    }
+
+    .about-main {
+        height: 70rem !important;
+        position: relative;
+        top: 340px;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-right {
+        width: 100%;
+        /* padding: 10px; */
+        /* margin: 10px; */
+        text-align: right;
+    }
+
+    .benefits-container {
+        flex-direction: column;
+    }
+
+    .tech-container {
+        flex-direction: column;
+    }
+
+    .contact-head {
+        font-size: 2.5rem;
+        margin: 10px;
+    }
+
+    .brain-img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .unlock-para {
+        padding: 0;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        font-size: 7px;
+    }
+
+}
